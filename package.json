@@ -2,8 +2,18 @@
   "name": "openclaw-cfix",
   "version": "1.0.0",
   "description": "OpenClaw plugin for diagnosing and fixing C/GCC/Clang compiler errors",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "type": "module",
+  "openclaw": {
+    "extensions": ["./index.ts"],
+    "compat": {
+      "pluginApi": ">=2026.3.24-beta.2",
+      "minGatewayVersion": "2026.3.24-beta.2"
+    },
+    "build": {
+      "openclawVersion": "2026.3.24-beta.2",
+      "pluginSdkVersion": "2026.3.24-beta.2"
+    }
+  },
   "scripts": {
     "build": "tsc",
     "test": "vitest run",
