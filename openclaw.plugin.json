@@ -1,0 +1,7 @@
+{
+  "id": "cfix",
+  "name": "CFix",
+  "description": "Diagnose and fix C/GCC/Clang compiler errors and warnings",
+  "version": "1.0.0",
+  "entry": "dist/index.js"
+}
